@@ -10,7 +10,7 @@ const ImageGrid = () => {
     console.log('API URL:', process.env.REACT_APP_API_URL); 
     const fetchImages = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/images`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}/images`);
         setImages(res.data);
       } catch (err) {
         console.error('Error fetching images:', err.message);
